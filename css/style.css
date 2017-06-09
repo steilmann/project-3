@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/*----- Txypography ---*/
+
+body, input, select, textarea, button {
+	font-family: Merriweather, "Times New Roman", serif;
+}
+/*----- Base Element Styles ---*/
+
+h1 {
+	color: white;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	letter-spacing: 0.05em;
+	padding-top: 23px;
+}
+h2 {
+	padding-bottom: 12px;
+	font-size: 1.1em;
+}
+p {
+	line-height: 1.5em;
+}
+
+/*----- Base Layout Styles ---*/
+
+.container {
+	margin: 0 15px;
+}
+.header {
+	height: 70px;
+	background: #2d3945;
+	width: 100%;
+	text-align: center;
+}
+.intro {
+	text-align: center;
+	border-bottom: 4px solid #2d3945;
+	margin-bottom: 2px;
+	padding-top: 30px;
+	padding-bottom: 35px;
+	background: lightyellow;
+}
+.intro p {
+	color: #aaafb4;
+	font-size: 0.9em;
+}
+.contact {
+	border-top: 2px solid #2d3945;
+}
+.newsletter {
+	border-top: 2px solid #2d3945;
+}
+
+/*----- Form Elements ---*/
+
+form {
+}
+fieldset {
+	border: none;
+	padding: 0;
+}
+legend {
+	padding: 25px 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+label {
+	font-size: 14px;
+	color: #2d3945;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+::-webkit-input-placeholder {
+ font-style: italic;
+ font-size: 12px;
+ text-align: right;
+}
+
+:-moz-placeholder { /* older Firefox*/
+ font-style: italic;
+ font-size: 12px;
+ text-align: right;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+ font-style: italic;
+ font-size: 12px;
+ text-align: right;
+}
+
+:-ms-input-placeholder {
+ font-style: italic;
+ font-size: 12px;
+ text-align: right;
+}
+input[type="text"], input[type="number"], input[type="tel"], input[type="email"], select, textarea {
+	border: none;
+	font-size: 14px;
+	outline: 0;
+	padding: 15px 20px;
+	width: 100%;
+	height: 50px;
+	background-color: #eff0f1;
+	color: #aaafb4;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+select {
+	font-size: 14px;
+}
+input:focus, textarea:focus, select:focus {
+	outline: 0;
+	border: 2px solid #46698b;
+	background-color: lightgray;
+	transition: 1s;
+}
+textarea {
+	height: 100px;
+}
+.zip {
+	width: 150px;
+}
+.newsletter p {
+	color: #2d3945;
+	font-size: 0.9em;
+	padding-bottom: 15px;
+}
+input[type="radio"], input[type="checkbox"] {
+	margin: 0 10px 20px 0;
+}
+.js {
+	padding-bottom: 10px;
+}
+.plaintext {
+	padding-bottom: 10px;
+}
+button {
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	background-color: #4ebbb5;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	border-radius: 5px;
+	width: 100%;
+	border: none;
+	margin: 10px 0 30px;
+}
+button:hover {
+	cursor: pointer;
+}
+.footer {
+	text-align: center;
+	color: #aaafb4;
+	font-size: 0.9em;
+	font-style: italic;
+	padding-bottom: 200px;
+}
+
+/*----- Clearfix ---*/
+
+.clearfix:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+/*----- Media Queries ---*/
+
+@media (min-width: 768px) {
+.container {
+	width: 600px;
+	margin: 0 auto;
+}
+.contact label {
+	float: left;
+	padding-top: 14px;
+}
+.contact input, .contact select {
+	float: right;
+	width: 444px;
+}
+.zip {
+	width: 305px;
+}
+.zip label {
+	float: left;
+}
+.zip input {
+	width: 150px;
+	float: right;
+}
+}
